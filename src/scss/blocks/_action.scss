@@ -1,0 +1,143 @@
+.act-icon{
+    width: 132px;
+    height: 132px;
+    display: flex;
+    position: relative;
+}
+
+.act-text{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.action{
+    background: #000;
+    color: #fff;
+    padding-top: 15px;
+}
+
+.act-df{
+    display: flex;
+    gap: 32px;
+}
+
+.act-title{
+    font-family: $arch;
+    font-size: 62px;
+    font-weight: bold;
+    align-self: flex-end;
+    position: relative;
+    right: 0;
+}
+
+.blue{
+    color: #52BEDC;
+}
+
+.act-desc{
+    max-width: 952px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: $roboto;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+
+.form{
+    margin-top: 98px;
+    font-family: $roboto;
+    font-size: 18px;
+    font-weight: 300;
+    min-width: 460px;
+}
+
+hr{
+    background: #777;
+    height: 1px;
+}
+
+.inp{
+    padding: 10px;
+}
+
+.act-screenshot{
+    margin-top: 35px;
+    height: 120px;
+    border: 1px dashed #777; 
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.act-scr-inner{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.white{
+    color: #fff;
+}
+
+.act-btn{
+    margin-top: 35px;
+    color: #000;
+    background: #F8F200;
+    text-align: center;
+    padding: 15px 50px;
+    font-family: $roboto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rbt{
+    font-family: $roboto;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.act-sub{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.action-wrap{
+    display: flex;
+}
+
+
+.act-r-list{
+    display: flex;
+    position: relative;
+    left: 50px;
+    top: 10px;
+}
+
+
+
+.action-left{
+    position: relative;
+}
+
+@include Tablet{
+    .act-df{
+        flex-direction: column;
+        gap: 0;
+        float: left;
+    }
+
+    .act-title{
+    }
+
+    .act-desc{
+        max-width: 460px;
+    }
+
+
+
+    .act-r-list{
+        flex-direction: column;
+    }
+}

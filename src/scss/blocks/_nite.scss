@@ -1,0 +1,59 @@
+.nite{
+    position: relative;
+    margin-top: 70px;
+}
+
+.nite-title{
+    font-family: $arch;
+    font-size: 62px;
+    font-weight: bold;
+
+}
+
+.nite-desc{
+    margin-top: 25px;
+    font-size: $roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.sylka{
+    color: #52BEDC !important;
+}
+
+.nite-list{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+}
+
+.nite-left{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.black-transiton{
+    width: 100vw;
+    margin-top: 70px;
+    height: 70px;
+    background: linear-gradient(180deg,transparent ,black);
+    backdrop-filter: blur(50px);
+}
+
+@include Tablet{
+    .nite-left{
+        flex-direction: row;
+    }
+
+    .nite-img{
+        width: 50vw;
+    }
+
+    .nite-main{
+        width: 100vw;
+    }
+}
