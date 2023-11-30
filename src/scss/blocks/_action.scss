@@ -128,16 +128,27 @@ hr{
         float: left;
     }
 
-    .act-title{
-    }
 
+    .action-wrap{
+        display: flex;
+        flex-direction: row !important;
+    }
     .act-desc{
         max-width: 460px;
     }
 
-
+    .form{
+        max-width: 460px;
+    }
 
     .act-r-list{
         flex-direction: column;
+        left: 0;
+        align-items: middle;
+        vertical-align: middle;
+    }
+
+    .action-left{
+        float: left;
     }
 }
