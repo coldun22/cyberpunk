@@ -1,0 +1,129 @@
+.hp-trans{
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(180deg,#000,#F8F200);
+    position: relative;
+    left: 0;
+
+}
+
+
+.hp{
+    background: #F8F200;
+}
+
+.hp-list{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+}
+
+.hp-main-list{
+    text-align: center;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.hp-left{
+    position: relative;
+    left: 0;
+}
+
+
+.hp-wrap{
+    display: flex;
+    gap: 32px;
+}
+
+.hp-right{
+    max-width: 624px;
+}
+
+.hp-title{
+    color: #000;
+    font-family: $arch;
+    font-size: 47px;
+    font-weight: bold;
+}
+
+.hp-desc{
+    font-family: $roboto;
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    line-height: 34px;
+    margin-top: 25px;
+}
+
+.hp-el{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 21px;
+}
+
+.hp-up{
+    margin-top: 10px;
+}
+
+.hp-btn{
+    color: #F8F200;
+    font-family: $roboto;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background: #000;
+    margin-top: 15px;
+}
+
+button{
+    transition: all 0.2s ease-in;
+}
+
+button:hover{
+    transform: scale(0.95);
+}
+
+@include Tablet{
+
+    .hp-left{
+        min-width: 50%;
+        height: 100%;
+    }
+    .hp-list{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 32px;
+        margin-top: 32px;
+    }
+
+    .hp-title{
+        font-size: 45px;
+    }
+
+    .hp-desc{
+        font-size: 16px;
+    }
+}
+
+@include Sub_Phone{
+    .hp-wrap{
+        flex-direction: column;
+    }
+
+    .hp-desc{
+        font-size: 18px;
+    }
+
+
+}
+
+
+.hp{
+    padding-bottom: 70px;
+}

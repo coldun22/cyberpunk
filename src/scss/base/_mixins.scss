@@ -65,6 +65,12 @@
 	}
 }
 
+@mixin SuTab{
+	@media screen and (max-width:950px){
+		@content
+	}
+}
+
 @mixin Sub_Phone{
 	@media screen and (max-width:728px){
 		@content
